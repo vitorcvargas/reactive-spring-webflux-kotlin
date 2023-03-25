@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/kotlin/com/reactivespring/moviesinfoservice/controller/MoviesInfoController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/kotlin/com/reactivespring/moviesinfoservice/domain/MovieInfo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/kotlin/com/reactivespring/moviesinfoservice/repository/MovieInfoRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/kotlin/com/reactivespring/moviesinfoservice/service/MoviesInfoService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies-info-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -58,6 +69,11 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.reactivespring.moviesinfoservice.service" />
+    </key>
+  </component>
   <component name="RunManager" selected="Kotlin.MoviesInfoServiceApplicationKt">
     <configuration name="MoviesInfoServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.reactivespring.moviesinfoservice.MoviesInfoServiceApplicationKt" />
