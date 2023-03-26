@@ -1,6 +1,9 @@
 package com.reactivespring.moviesinfoservice.domain
 
+import com.fasterxml.jackson.annotation.JsonCreator
+import jakarta.validation.Valid
 import jakarta.validation.constraints.NotBlank
+import jakarta.validation.constraints.NotEmpty
 import jakarta.validation.constraints.NotNull
 import jakarta.validation.constraints.Positive
 import org.springframework.data.annotation.Id
@@ -10,19 +13,25 @@ import java.time.LocalDate
 
 @Document
 @Validated
-data class MovieInfo(
+data class MovieInfo (
     @Id
-    var movieInfoId: String,
+    var movieInfoId: String?,
 
-    @NotBlank(message = "movieInfo.name must be present")
+    @get:NotBlank(message = "movieInfo.name must be present")
     var name: String,
 
-    @NotNull
-    @Positive(message = "movieInfo.year must be a Positive Value")
+    @get:NotNull
+    @get:Positive(message = "movieInfo.year must be a Positive Value")
     var year: Int,
 
-    @NotNull
-    var cast: List<String>,
+    @field:Valid
+    @field:NotEmpty(message = "movieInfo.cast must be present")
+    var cast: List<Actor>,
 
     var release_date: LocalDate
+)
+
+data class Actor (
+    @NotBlank
+    var name: String
 )
