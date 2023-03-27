@@ -8,10 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document
 data class Review(
     @Id
-    var reviewId: String,
+    var reviewId: String?,
 
     @get:NotNull(message = "rating.movieInfoId : must not be null")
-    var movieInfoId: Long,
+    var movieInfoId: Long?,
 
     var comment: String? = null,
 

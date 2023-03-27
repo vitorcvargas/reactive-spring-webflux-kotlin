@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/exception/ReviewDataException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/exception/ReviewNotFoundException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/exceptionhandler/GlobalErrorHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/handler/ReviewsHandler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/repository/ReviewReactiveRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/routes/ReviewRouter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/validator/ReviewValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/test/kotlin/com/reactivespring/moviesreviewservice/routes/ReviewsTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies-review-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/movies-review-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/domain/Review.kt" beforeDir="false" afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/domain/Review.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <recent name="com.reactivespring.moviesinfoservice.unit.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MoviesInfoControllerTest.addNewMovieInfo_validation">
+  <component name="RunManager" selected="Gradle.ReviewsTest.addReview">
     <configuration name="MoviesInfoControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,10 +132,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MoviesInfoControllerTest.deleteMovieInfoById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ReviewsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-review-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -149,7 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.reactivespring.moviesinfoservice.controller.MoviesInfoControllerTest.deleteMovieInfoById&quot;" />
+            <option value="&quot;com.reactivespring.moviesreviewservice.routes.ReviewsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -159,10 +155,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MoviesInfoControllerTest.updateMovieInfo_notFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ReviewsTest.addReview" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-review-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -172,7 +168,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.reactivespring.moviesinfoservice.controller.MoviesInfoControllerTest.updateMovieInfo_notFound&quot;" />
+            <option value="&quot;com.reactivespring.moviesreviewservice.routes.ReviewsTest.addReview&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,20 +178,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MoviesInfoServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.reactivespring.moviesinfoservice.MoviesInfoServiceApplicationKt" />
-      <module name="movies-info-service.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ReviewsTest.deleteReview" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-review-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.reactivespring.moviesreviewservice.routes.ReviewsTest.deleteReview&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ReviewsTest.addReview" />
+        <item itemvalue="Gradle.ReviewsTest" />
+        <item itemvalue="Gradle.ReviewsTest.deleteReview" />
         <item itemvalue="Gradle.MoviesInfoControllerTest.addNewMovieInfo_validation" />
         <item itemvalue="Gradle.MoviesInfoControllerTest" />
-        <item itemvalue="Gradle.MoviesInfoControllerTest.deleteMovieInfoById" />
-        <item itemvalue="Gradle.MoviesInfoControllerTest.updateMovieInfo_notFound" />
-        <item itemvalue="Kotlin.MoviesInfoServiceApplicationKt" />
       </list>
     </recent_temporary>
   </component>

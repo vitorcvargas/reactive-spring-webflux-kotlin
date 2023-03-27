@@ -10,7 +10,9 @@ import org.springframework.validation.Validator
 @Component
 class ReviewValidator : Validator {
 
-    private val log = LoggerFactory.getLogger(this.javaClass)
+    companion object {
+        private val log = LoggerFactory.getLogger(this.javaClass)
+    }
 
     override fun supports(clazz: Class<*>): Boolean {
         return Review::class.java == clazz

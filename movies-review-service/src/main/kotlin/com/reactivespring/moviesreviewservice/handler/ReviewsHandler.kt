@@ -62,7 +62,7 @@ class ReviewsHandler(var reviewReactiveRepository: ReviewReactiveRepository, var
         if (errors.hasErrors()) {
             val errorMessage = errors.allErrors
                 .stream()
-                .map { error: ObjectError -> format("%s:%s", error.code, error.defaultMessage) }
+                .map { error: ObjectError -> format("%s : %s", error.code, error.defaultMessage) }
                 .sorted()
                 .collect(Collectors.joining(", "))
             log.info("errorMessage : {} ", errorMessage)
