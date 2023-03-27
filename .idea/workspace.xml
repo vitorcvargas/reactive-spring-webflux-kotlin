@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="" />
+    <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/exception/ReviewDataException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/exception/ReviewNotFoundException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/exceptionhandler/GlobalErrorHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/handler/ReviewsHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/repository/ReviewReactiveRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/routes/ReviewRouter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-review-service/src/main/kotlin/com/reactivespring/moviesreviewservice/validator/ReviewValidator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
