@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/test/kotlin/com/reactivespring/moviesreviewservice/routes/ReviewsIT.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-review-service/src/test/kotlin/com/reactivespring/moviesreviewservice/utils/containers/MongoContainer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-info-service/src/test/kotlin/com/reactivespring/moviesinfoservice/controller/MovieInfoControllerIT.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies-info-service/src/test/kotlin/com/reactivespring/moviesinfoservice/utils/containers/MongoContainer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies-review-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/movies-review-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies-info-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/vicardoso/projects/reactive-spring-webflux-kotlin",
+    "last_opened_file_path": "/home/vicardoso/projects/reactive-spring-webflux",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -88,11 +88,11 @@
       <recent name="com.reactivespring.moviesinfoservice.unit.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReviewIT.getReviews">
-    <configuration name="ReviewIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MovieInfoControllerIT">
+    <configuration name="MovieInfoControllerIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-review-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -102,7 +102,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.reactivespring.moviesreviewservice.routes.ReviewIT&quot;" />
+            <option value="&quot;com.reactivespring.moviesinfoservice.controller.MovieInfoControllerIT&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MovieInfoControllerIT.getAllMovieInfos" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.reactivespring.moviesinfoservice.controller.MovieInfoControllerIT.getAllMovieInfos&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MovieInfoControllerIT.getAllMovieInfos_Stream" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-info-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.reactivespring.moviesinfoservice.controller.MovieInfoControllerIT.getAllMovieInfos_Stream&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,59 +204,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReviewsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-review-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.reactivespring.moviesreviewservice.routes.ReviewsTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ReviewsTest.addReview_Validations" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/movies-review-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.reactivespring.moviesreviewservice.routes.ReviewsTest.addReview_Validations&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MovieInfoControllerIT" />
+        <item itemvalue="Gradle.MovieInfoControllerIT.getAllMovieInfos" />
+        <item itemvalue="Gradle.MovieInfoControllerIT.getAllMovieInfos_Stream" />
         <item itemvalue="Gradle.ReviewIT.getReviews" />
         <item itemvalue="Gradle.ReviewIT.name" />
-        <item itemvalue="Gradle.ReviewIT" />
-        <item itemvalue="Gradle.ReviewsTest" />
-        <item itemvalue="Gradle.ReviewsTest.addReview_Validations" />
       </list>
     </recent_temporary>
   </component>
