@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/movies-info-service/src/main/kotlin/com/reactivespring/moviesinfoservice/exception/MovieInfoNotfoundException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movies-info-service/src/test/kotlin/com/reactivespring/moviesinfoservice/controller/MoviesInfoControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies-info-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies-info-service/src/main/kotlin/com/reactivespring/moviesinfoservice/domain/MovieInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/movies-info-service/src/main/kotlin/com/reactivespring/moviesinfoservice/domain/MovieInfo.kt" afterDir="false" />
-    </list>
+    <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/vicardoso/projects/charge-orchestrator",
+    "last_opened_file_path": "/home/vicardoso/projects/reactive-spring-webflux-kotlin",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
