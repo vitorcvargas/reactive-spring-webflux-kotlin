@@ -35,14 +35,14 @@ class ReviewsRestClient(private val webClient: WebClient) {
 
                 if ((clientResponse.statusCode() == HttpStatus.NOT_FOUND)) {
                     Mono.empty<Throwable>()
+                } else {
+                    clientResponse.bodyToMono(String::class.java)
+                        .flatMap { response ->
+                            Mono.error(
+                                ReviewsClientException(response)
+                            )
+                        }
                 }
-
-                clientResponse.bodyToMono(String::class.java)
-                    .flatMap { response ->
-                        Mono.error(
-                            ReviewsClientException(response)
-                        )
-                    }
             }
             .onStatus({ obj: HttpStatusCode -> obj.is5xxServerError }) { clientResponse ->
 

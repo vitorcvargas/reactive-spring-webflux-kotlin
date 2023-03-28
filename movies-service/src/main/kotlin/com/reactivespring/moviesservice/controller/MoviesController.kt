@@ -19,7 +19,8 @@ class MoviesController(var moviesInfoRestClient: MoviesInfoRestClient, var revie
 
     @GetMapping("/{id}")
     fun retrieveMovieById(@PathVariable("id") movieId: String): Mono<Movie> {
-        return moviesInfoRestClient.retrieveMovieInfo(movieId) //moviesInfoRestClient.retrieveMovieInfo_exchange(movieId)
+
+        return moviesInfoRestClient.retrieveMovieInfo(movieId)
             .flatMap { movieInfo ->
                 val reviewList = reviewsRestClient.retrieveReviews(movieId)
                     .collectList()

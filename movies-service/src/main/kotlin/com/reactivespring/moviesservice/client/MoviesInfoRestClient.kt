@@ -23,7 +23,7 @@ class MoviesInfoRestClient(private val webClient: WebClient) {
 
     @Value("\${restClient.moviesInfoUrl}")
     lateinit var moviesInfoUrl: String
-    fun retrieveMovieInfo(movieId: String): Mono<MovieInfo>? {
+    fun retrieveMovieInfo(movieId: String): Mono<MovieInfo> {
         val url = "$moviesInfoUrl/{id}"
 
         return webClient.get()
@@ -40,16 +40,16 @@ class MoviesInfoRestClient(private val webClient: WebClient) {
                             clientResponse.statusCode().value()
                         )
                     )
+                } else {
+                    clientResponse.bodyToMono(String::class.java)
+                        .flatMap { response ->
+                            Mono.error(
+                                MoviesInfoClientException(response, clientResponse.statusCode().value())
+                            )
+                        }
                 }
-
-                clientResponse.bodyToMono(String::class.java)
-                    .flatMap { response: String ->
-                        Mono.error(
-                            MoviesInfoClientException(response, clientResponse.statusCode().value())
-                        )
-                    }
             }
-            .onStatus({ obj: HttpStatusCode -> obj.is4xxClientError }) { clientResponse ->
+            .onStatus({ obj: HttpStatusCode -> obj.is5xxServerError }) { clientResponse ->
 
                 log.info("Status code : {}", clientResponse.statusCode().value())
 

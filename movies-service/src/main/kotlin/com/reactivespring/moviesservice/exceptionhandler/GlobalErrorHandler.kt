@@ -16,12 +16,12 @@ class GlobalErrorHandler {
     fun handleClientException(ex: MoviesInfoClientException): ResponseEntity<String> {
         log.error("Exception caught in handleClientException :  {} ", ex.message, ex)
         log.info("Status value is : {}", ex.statusCode)
-        return ResponseEntity.status(HttpStatus.valueOf(ex.statusCode)).body(ex.message)
+        return ResponseEntity(ex.message, HttpStatus.valueOf(ex.statusCode))
     }
 
     @ExceptionHandler(RuntimeException::class)
     fun handleRuntimeException(ex: RuntimeException): ResponseEntity<String> {
         log.error("Exception caught in handleClientException :  {} ", ex.message, ex)
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.message)
+        return ResponseEntity(ex.message, HttpStatus.INTERNAL_SERVER_ERROR)
     }
 }

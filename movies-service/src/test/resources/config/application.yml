@@ -1,0 +1,3 @@
+restClient:
+  moviesInfoUrl: http://localhost:8084/v1/movieinfos
+  reviewsUrl: http://localhost:8084/v1/reviews

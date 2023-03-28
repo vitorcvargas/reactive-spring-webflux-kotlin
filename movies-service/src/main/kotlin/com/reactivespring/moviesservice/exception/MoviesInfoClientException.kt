@@ -1,3 +1,3 @@
 package com.reactivespring.moviesservice.exception
 
-class MoviesInfoClientException(override var message: String, var statusCode: Int) : RuntimeException(message)
+class MoviesInfoClientException(message: String, val statusCode: Int) : RuntimeException(message)
