@@ -96,6 +96,7 @@ class ReviewsHandler(var reviewReactiveRepository: ReviewReactiveRepository, var
 
         return reviewReactiveRepository.findById(reviewId)
             .flatMap {
+                log.info("Deleting review with id: $reviewId")
                 reviewReactiveRepository.deleteById(reviewId)
             }
             .then(ServerResponse.noContent().build())

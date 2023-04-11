@@ -26,5 +26,8 @@ class ReviewValidator : Validator {
         if (review.rating < 0.0) {
             errors.rejectValue("rating", "rating.negative", "rating is negative and please pass a non-negative value")
         }
+
+        if (review.reviewId == "1")
+            errors.rejectValue("rating", "rating.bad.id", "This id is a bad one.")
     }
 }

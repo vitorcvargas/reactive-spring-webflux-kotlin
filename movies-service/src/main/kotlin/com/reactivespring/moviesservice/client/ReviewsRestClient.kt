@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.HttpStatusCode
+import org.springframework.http.MediaType
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.client.WebClient
 import org.springframework.web.util.UriComponentsBuilder
@@ -20,7 +21,40 @@ class ReviewsRestClient(private val webClient: WebClient) {
     private val log = LoggerFactory.getLogger(this.javaClass)
 
     @Value("\${restClient.reviewsUrl}")
-    lateinit var reviewsUrl: String
+    private lateinit var reviewsUrl: String
+
+    fun postReview(
+        review: Review,
+        validReviews: MutableSet<Boolean>,
+        reviewResponses: MutableList<Review>
+    ): Mono<Review> {
+
+        return webClient.post()
+            .uri(reviewsUrl)
+            .bodyValue(review)
+            .accept(MediaType.APPLICATION_JSON)
+            .exchangeToMono { response ->
+                if (response.statusCode().is2xxSuccessful) {
+                    response.bodyToMono(Review::class.java)
+                } else {
+                    validReviews.add(false)
+                    Mono.empty()
+                }
+            }
+    }
+
+    fun deleteReview(reviewId: String): Mono<Review> {
+
+        return webClient.delete()
+            .uri("$reviewsUrl/$reviewId")
+            .exchangeToMono { response ->
+                if (response.statusCode().is2xxSuccessful) {
+                    response.bodyToMono(Review::class.java)
+                } else {
+                    Mono.empty()
+                }
+            }
+    }
 
     fun retrieveReviews(movieId: String): Flux<Review> {
         val url = UriComponentsBuilder.fromHttpUrl(reviewsUrl)
