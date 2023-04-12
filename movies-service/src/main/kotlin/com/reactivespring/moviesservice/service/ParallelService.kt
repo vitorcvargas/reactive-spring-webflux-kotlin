@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Flux
 import reactor.core.scheduler.Schedulers
+import java.util.Collections
 
 
 @Service
@@ -21,7 +22,7 @@ class ParallelService {
         log.info("Should be logged once, when method called.")
 
         var validReviews = HashSet<Boolean>()
-        var reviewResponses = ArrayList<Review>()
+        var reviewResponses = Collections.synchronizedList(mutableListOf<Review>())
 
         return Flux.fromIterable(reviews)
             .parallel(10)
@@ -42,8 +43,6 @@ class ParallelService {
                     Flux.fromIterable(reviewResponses)
                         .flatMap { review -> reviewsRestClient.deleteReview(review.reviewId!!) }
                         .subscribe()
-
-                    println(reviewResponses)
 
                     Flux.empty()
                 } else {
