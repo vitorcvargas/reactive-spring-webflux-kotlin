@@ -5,7 +5,7 @@ import com.reactivespring.moviesservice.client.ReviewsRestClient
 import com.reactivespring.moviesservice.domain.Movie
 import com.reactivespring.moviesservice.domain.MovieInfo
 import com.reactivespring.moviesservice.domain.Review
-import com.reactivespring.moviesservice.service.ParallelService
+import com.reactivespring.moviesservice.service.ReviewService
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono
 class MoviesController(
     var moviesInfoRestClient: MoviesInfoRestClient,
     var reviewsRestClient: ReviewsRestClient,
-    var reviewService: ParallelService
+    var reviewService: ReviewService
 ) {
 
     @GetMapping("/{id}")

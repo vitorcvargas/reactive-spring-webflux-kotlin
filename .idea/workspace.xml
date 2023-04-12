@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99a9f655-bf4f-4efd-aa2a-75c5af64017d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/movies-service/src/main/kotlin/com/reactivespring/moviesservice/service/ParallelService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/movies-service/src/main/kotlin/com/reactivespring/moviesservice/service/ParallelService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies-service/src/main/kotlin/com/reactivespring/moviesservice/service/ReviewService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/movies-service/src/main/kotlin/com/reactivespring/moviesservice/service/ReviewService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,21 +290,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/movies-service/src/main/kotlin/com/reactivespring/moviesservice/client/ReviewsRestClient.kt</url>
-          <line>51</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/movies-service/src/main/kotlin/com/reactivespring/moviesservice/service/ParallelService.kt</url>
-          <line>46</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

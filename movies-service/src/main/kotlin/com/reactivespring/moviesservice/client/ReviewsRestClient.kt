@@ -25,8 +25,7 @@ class ReviewsRestClient(private val webClient: WebClient) {
 
     fun postReview(
         review: Review,
-        validReviews: MutableSet<Boolean>,
-        reviewResponses: MutableList<Review>
+        validReviews: MutableSet<Boolean>
     ): Mono<Review> {
 
         return webClient.post()
@@ -68,7 +67,7 @@ class ReviewsRestClient(private val webClient: WebClient) {
                 log.info("Status code : {}", clientResponse.statusCode().value())
 
                 if ((clientResponse.statusCode() == HttpStatus.NOT_FOUND)) {
-                    Mono.empty<Throwable>()
+                    Mono.empty()
                 } else {
                     clientResponse.bodyToMono(String::class.java)
                         .flatMap { response ->
